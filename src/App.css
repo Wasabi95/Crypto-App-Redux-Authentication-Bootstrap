@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+.custom-navbar-bg {
+    background-color: #1877F2;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* In a separate CSS file or style block */
+.crypto-link {
+    text-decoration: none; /* Remove underlines */
+    color: inherit; /* Inherit the text color */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+/* Add this to your CSS file or styled-components */
+.xc:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.news-card {
+    padding: 20px;
+    background-color: rgb(251, 253, 255);
+    
 }
+
+.news-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+.card-container {
+    height: 100%; /* Set the desired height for all cards */   
+    justify-content: space-between;
+  }
+  
+  /* Add this CSS in your CSS file */
+.news-link {
+    text-decoration: none;
+  }
+  
+
+  
+.coin-detail-container {
+    margin: 30px;
+}
+
+.coin-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.coin-heading-container .coin-name {
+    font-weight: 900;
+    color: var(--pink);
+}
+
+.coin-heading-container p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.stats-container h2 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: var(--pink);
+}
+
+.coin-details-heading {
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+    color: var(--pink) !important;
+}
+
+.coin-stats {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+    opacity: 0.9;
+    padding: 20px;
+}
+
+.coin-stats-name {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.stats {
+    font-weight: 800;
+}
+
+.coin-value-statistics-heading p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.coin-desc-link {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.coin-desc-link h2 {
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.coin-desc-link p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.coin-desc-link a {
+    color: var(--pink);
+}
+
+.coin-desc-link h3 {
+    font-weight: 700;
+}
+
+.coin-desc {
+    flex: 0.5;
+}
+
+.coin-links {
+    padding: 0px 20px;
+    flex: 0.5;
+}
+
+.coin-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
+}
+
+.link-name {
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.coin-link a {
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.coin-link:hover,
+.coin-stats:hover {
+    background-color: var(--bgSecondary);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #d8d81e;
+    color: white;
+  }
